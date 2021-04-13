@@ -1,0 +1,56 @@
+.fade-in {
+    opacity: 0%;
+    animation: fadeIn ease 1s forwards;
+    -webkit-animation: fadeIn ease 1s forwards;
+    -moz-animation: fadeIn ease 1s forwards;
+    -o-animation: fadeIn ease 1s forwards;
+    -ms-animation: fadeIn ease 1s forwards;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}   
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}  
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+} 
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes blink { 
+    50% { border-color: white; }
+}
+@-moz-keyframes fadeIn {
+    50% { border-color: #00072D; }
+}  
+@-webkit-keyframes fadeIn {
+    50% { border-color: #00072D; }
+}
+@-o-keyframes fadeIn {
+    50% { border-color: #00072D; }
+} 
+@-ms-keyframes fadeIn {
+    50% { border-color: #00072D; }
+}
+
+.blink {
+    animation-name: blink;
+    animation-duration: 0.7s;
+    animation-timing-function: step-end ;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate ;
+
+    border-right: 1px solid black;
+    display: inline-block;
+    padding-right: 2px;
+}

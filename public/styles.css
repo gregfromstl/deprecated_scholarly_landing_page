@@ -1,0 +1,71 @@
+@font-face {
+    font-family: ubuntu-light;
+    src: url(assets/Ubuntu-Light.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    display: block;
+}
+
+.screen {
+    font-family: ubuntu-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: absolute;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.no-scroll {
+    height: 100vh;
+    width: 100vw;
+}
+
+.center {
+    width: 60vw;
+    text-align: center;
+    overflow: visible;
+}
+
+#text {
+    padding: 30px 0px;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: left;
+}
+
+@media (max-width: 1000px) {
+    .center {
+        width: 90vw;
+        text-align: center;
+        overflow: visible;
+    }
+    #text {
+        line-height: 35px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .center {
+        width: 90vw;
+        text-align: center;
+        overflow: visible;
+    }
+    #text {
+        line-height: 20px;
+        font-size: 15px;
+    }
+}
