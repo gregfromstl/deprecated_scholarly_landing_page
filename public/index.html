@@ -12,11 +12,23 @@
     <body onload="typewriter()">
         <div id="particles-js"></div>
         <div class="screen no-scroll">
+            <div id="overlay"></div>
             <div class="center">
                 <img id="logo" src="logo.svg" />
                 <div id="text">
                     Discover the cutting edge in 
                     <span class="blink delay3_5 dark-bg" id="dynamic"></span>
+                </div>
+                <div id="join">
+                    <img id="unlock" src="unlock.svg" />
+                    <span>Join the beta</span>
+                </div>
+                <div id="modal">
+                    <div>We'll let you know when it's your turn.</div>
+                    <div id="input">
+                        <input type=text placeholder="Email" />
+                        <div id="submit">Submit</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -24,5 +36,6 @@
         <script src="js/particles.min.js"></script>
         <script src="js/app.js"></script>
         <script src="js/typewriter.js"></script>
+        <script src="js/modal.js"></script>
     </body>
 </html>
