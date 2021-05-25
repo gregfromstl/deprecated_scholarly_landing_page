@@ -60,12 +60,16 @@ p {
 }
 
 #join {
-  font-size: medium;
+  font-size: 18px;
   color: #aaa;
   cursor: pointer;
   font-family: opensans;
-  width: 150px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
   margin: auto;
+  width: 150px;
 }
 
 #join:hover {
@@ -168,5 +172,9 @@ input {
   #text {
     line-height: 20px;
     font-size: 15px;
+  }
+  #join {
+    font-size: 14px;
+    bottom: 50px;
   }
 }
