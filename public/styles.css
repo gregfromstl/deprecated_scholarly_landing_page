@@ -56,6 +56,7 @@ p {
   height: 100%;
   z-index: 1;
   visibility: hidden;
+  cursor: pointer;
 }
 
 #join {
@@ -87,14 +88,23 @@ p {
   position: absolute;
   /* total width is width + padding * 2 */
   left: calc(50% - 300px);
-  top: 200px;
+  top: calc(50vh - 125px);
   border-radius: 0.5rem;
   z-index: 10;
   background-color: white;
   visibility: hidden;
   padding: 50px;
   width: 500px;
+  height: 150px;
   font-size: x-large;
+}
+
+#confirmation,
+#failure {
+  height: 100px;
+  line-height: 100px;
+  /* total height is height + padding * 2 */
+  top: calc(50vh - 100px);
 }
 
 #input {
@@ -134,7 +144,7 @@ input {
 }
 #submit:hover {
   background-color: #009eef;
-  transition: 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
 @media (max-width: 1000px) {
