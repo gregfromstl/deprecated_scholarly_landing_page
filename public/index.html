@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Scholarly</title>
-        <meta name="description" content="Discover the best papers in every field.">
-        <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" media="screen" href="css/particles.css">
-    </head>
-    <body onload="typewriter()">
-        <div id="particles-js"></div>
-        <div class="screen no-scroll">
-            <div class="center">
-                <img id="logo" src="logo.svg" />
-                <div id="text">
-                    Discover the cutting edge in 
-                    <span class="blink delay3_5 dark-bg" id="dynamic"></span>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <title>Scholarly</title>
+    <meta
+      name="description"
+      content="Discover the best papers in every field."
+    />
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" media="screen" href="css/particles.css" />
+  </head>
+  <body onload="typewriter()">
+    <div id="particles-js"></div>
+    <div class="screen no-scroll">
+      <div id="overlay"></div>
+      <div class="center">
+        <img id="logo" src="logo.svg" />
+        <div id="text">
+          Discover the cutting edge in
+          <span class="blink delay3_5 dark-bg" id="dynamic"></span>
         </div>
-        <!-- scripts -->
-        <script src="js/particles.min.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/typewriter.js"></script>
-    </body>
+        <div id="join">
+          <img id="unlock" src="unlock.svg" />
+          <span>Join the beta</span>
+        </div>
+        <div id="form" class="modal">
+          <div>Join the waitlist.</div>
+          <div id="input">
+            <input type="text" placeholder="Email" id="email" />
+            <div id="submit">Submit</div>
+          </div>
+        </div>
+        <div id="confirmation" class="modal">
+          <div>Success! See ya soon &#128578;</div>
+        </div>
+        <div id="failure" class="modal">
+          <div>Something went wrong &#128577; Try again?</div>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
 </html>
