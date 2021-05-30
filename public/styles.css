@@ -112,6 +112,7 @@ p {
 }
 
 #input {
+  display: flex;
   height: 40px;
   margin: auto;
   margin-top: 50px;
@@ -139,8 +140,7 @@ input {
 #submit {
   background-color: #00aeef;
   border-radius: 0.5rem;
-  height: 44px;
-  width: 26%;
+  width: 25%;
   float: right;
   border-radius: 0px 8px 8px 0px;
   color: white;
